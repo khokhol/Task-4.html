@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+
+:root {
+    --main-color: green;
+    --secondary-color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header div h1 {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem;
+}
+
+header div p {
+    font-family: 'Bitter', serif;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+header nav img {
+    display: block;
+    width: 15%
+}
+
+header nav .top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav .top-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .top-menu a:hover {
+    border: 1px solid var(--main-color)
+}
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+    }
+
+    header nav .top-menu {
+        flex: 1;
+    }
+}
+
+header div {
+    background-image: url(../img/landscape.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+header .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .banner .title {
+    font-size: 2rem;
+    font-family: 'Bitter', serif;
+    color: black;
+}
+
+header .banner h1 {
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+    color: black
+}
+
+main .projects img {
+    display: block;
+    width: 100%;
+    min-height: 230px;
+    max-height: 230px;
+}
+
+@media (min-width: 500px) {
+    main .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 780px) {
+    main .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
